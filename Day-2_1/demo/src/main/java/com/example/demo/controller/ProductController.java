@@ -23,6 +23,6 @@ public class ProductController {
      public ApiResponse getResult(@RequestBody ProductRequest request)
      {
         ProductResponse result =productService.calProductResponse(request);
-        return new ApiResponse("sucess", result);
+        return new ApiResponse("success", result);
          }
 }
