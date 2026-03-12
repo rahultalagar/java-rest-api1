@@ -23,7 +23,7 @@ public class Productservice {
    {
        int total=request.getProduct_price().stream().mapToInt(Integer::intValue).sum();
        int GST=18;
-       double final_total=(double) total+(total*GST/100.0);
+       double final_total= total+(total*GST/100);  //(double )
 
        Product product=new Product();
        product.setCustomer_Name(request.getCustomer_Name());
