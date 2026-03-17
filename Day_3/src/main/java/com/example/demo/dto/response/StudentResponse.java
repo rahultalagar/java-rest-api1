@@ -7,6 +7,7 @@ public class StudentResponse {
         private int total;
         private double percentage;
         private String result;
+        
         public StudentResponse(String name, int rollNumber, int total, double percentage, String result) {
             this.name = name;
             this.rollNumber = rollNumber;
